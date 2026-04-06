@@ -1,12 +1,12 @@
 /**
- * a uth.js
+ * auth.js
  * Handles login, signup, tab switching, password toggle, and validation.
  */
 
 const USERS_KEY = 'qm_users';
 const SESSION_KEY = 'qm_session';
 
-// ── Storage helpers ──────────────────────────────────────────────
+// ── LocalStorage helpers ──────────────────────────────────────────────
 function getUsers() {
   return JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
 }
