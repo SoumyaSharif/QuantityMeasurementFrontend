@@ -1,23 +1,10 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --rose-50: #fff8f7;
-  --rose-100: #fdf0ee;
-  --rose-200: #f5ddda;
-  --rose-300: #ebc8c2;
-  --rose-500: #b97a78;
-  --rose-600: #9e6666;
-  --plum-900: #42363f;
-  --ink: #574a54;
-  --muted: #8f7f88;
-  --line: rgba(148, 121, 129, 0.18);
-  --line-strong: rgba(148, 121, 129, 0.34);
-  --surface: rgba(255, 252, 251, 0.82);
-  --surface-strong: #fffdfc;
-  --shadow: 0 24px 70px rgba(135, 107, 116, 0.16);
+:host {
+  display: block;
 }
 
-body {
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+.auth-page {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -72,8 +59,7 @@ body {
 .brand-panel {
   width: 320px;
   flex-shrink: 0;
-  background:
-    linear-gradient(180deg, rgba(255, 248, 247, 0.95) 0%, rgba(248, 236, 232, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(255, 248, 247, 0.95) 0%, rgba(248, 236, 232, 0.9) 100%);
   border-right: 1px solid rgba(185, 122, 120, 0.12);
   display: flex;
   flex-direction: column;
@@ -344,7 +330,7 @@ body {
 }
 
 @media (max-width: 780px) {
-  body {
+  .auth-page {
     padding: 16px;
     align-items: flex-start;
     overflow: auto;

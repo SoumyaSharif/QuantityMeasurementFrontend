@@ -1,24 +1,5 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --rose-50: #fffaf8;
-  --rose-100: #fff3f0;
-  --rose-200: #f5dfdb;
-  --rose-300: #e7c6c1;
-  --rose-500: #bc8582;
-  --rose-600: #a76f6f;
-  --taupe-700: #6f5a62;
-  --ink: #51444d;
-  --muted: #8f7f88;
-  --border: rgba(156, 126, 134, 0.18);
-  --border-strong: rgba(156, 126, 134, 0.34);
-  --surface: rgba(255, 252, 251, 0.86);
-  --surface-strong: #fffdfc;
-  --shadow: 0 22px 60px rgba(140, 109, 117, 0.12);
-  --transition: 0.24s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
+:host {
+  display: block;
   min-height: 100vh;
   font-family: 'Manrope', sans-serif;
   color: var(--ink);
@@ -27,6 +8,8 @@ body {
     radial-gradient(circle at bottom right, rgba(245, 226, 212, 0.74), transparent 24%),
     linear-gradient(180deg, #fffdfb 0%, #fff6f4 52%, #fdf9f8 100%);
 }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 .navbar {
   position: sticky;
@@ -313,7 +296,6 @@ body {
 }
 
 #arithOps {
-  display: none;
   position: relative;
 }
 

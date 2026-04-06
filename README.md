@@ -1,105 +1,59 @@
-# Quantity Measurement Frontend
+# AngularTemp
 
-A soft, minimal frontend web app for quantity conversion, comparison, and arithmetic operations across multiple unit types.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
 
-This project includes a login/signup screen and a dashboard for working with:
-- Length
-- Weight
-- Temperature
-- Volume
+## Development server
 
-The app is currently fully frontend-based and uses `localStorage` for user sessions and calculation history.
+To start a local development server, run:
 
-## Features
-
-- Login and signup UI
-- Local browser-based authentication flow
-- Unit conversion
-- Unit comparison
-- Arithmetic operations between compatible units
-- Recent calculation history panel
-- Soft, minimal responsive UI
-
-## Tech Stack
-
-- HTML
-- CSS
-- JavaScript
-- `localStorage` for temporary data persistence
-
-## Project Structure
-
-```text
-Quantity_Measurement_Frontend/
-├── index.html
-├── README.md
-├── css/
-│   ├── auth.css
-│   └── dashboard.css
-├── js/
-│   ├── auth.js
-│   └── dashboard.js
-└── pages/
-    └── dashboard.html
+```bash
+ng serve
 ```
 
-## How It Works
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-### Authentication
+## Code scaffolding
 
-- Users can sign up and log in from the landing page.
-- User details are stored in the browser using `localStorage`.
-- After login, the user is redirected to the dashboard.
-- Session data is checked before opening the dashboard.
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-### Dashboard
+```bash
+ng generate component component-name
+```
 
-The dashboard allows the user to:
-- Select a measurement type
-- Choose an action: comparison, conversion, or arithmetic
-- Enter values and units
-- View the result instantly
-- Save recent calculations in local history
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-## How To Run
+```bash
+ng generate --help
+```
 
-This is a static frontend project, so no build step is required.
+## Building
 
-### Option 1
+To build the project run:
 
-Open [index.html](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/index.html) directly in your browser.
+```bash
+ng build
+```
 
-### Option 2
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-Run it using a local live server from your code editor for a smoother development workflow.
+## Running unit tests
 
-## Important Note
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-This project is not connected to a backend.
+```bash
+ng test
+```
 
-- No database is used
-- No real authentication server is used
-- User accounts and session data are stored only in the current browser
-- Clearing browser storage will remove saved users, session state, and history
+## Running end-to-end tests
 
-## Main Files
+For end-to-end (e2e) testing, run:
 
-- [index.html](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/index.html): Login and signup page
-- [pages/dashboard.html](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/pages/dashboard.html): Main dashboard page
-- [js/auth.js](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/js/auth.js): Authentication and session logic
-- [js/dashboard.js](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/js/dashboard.js): Calculator and dashboard functionality
-- [css/auth.css](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/css/auth.css): Auth page styling
-- [css/dashboard.css](/c:/Users/soumy/OneDrive/Desktop/Quantity_Measurement_Frontend/css/dashboard.css): Dashboard styling
+```bash
+ng e2e
+```
 
-## Future Improvements
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-- Connect to a backend for real authentication
-- Store user data securely
-- Add more unit categories
-- Add dark mode or theme switching
-- Improve form validation and error handling
-- Add export or saved history features
+## Additional Resources
 
-## Author
-
-Built for the Quantity Measurement frontend project.
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

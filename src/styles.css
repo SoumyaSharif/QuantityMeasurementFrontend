@@ -1,0 +1,28 @@
+:root {
+  --rose-50: #fff8f7;
+  --rose-100: #fff3f0;
+  --rose-200: #f5ddda;
+  --rose-300: #ebc8c2;
+  --rose-500: #b97a78;
+  --rose-600: #9e6666;
+  --plum-900: #42363f;
+  --taupe-700: #6f5a62;
+  --ink: #574a54;
+  --muted: #8f7f88;
+  --line: rgba(148, 121, 129, 0.18);
+  --line-strong: rgba(148, 121, 129, 0.34);
+  --border: rgba(156, 126, 134, 0.18);
+  --border-strong: rgba(156, 126, 134, 0.34);
+  --surface: rgba(255, 252, 251, 0.82);
+  --surface-strong: #fffdfc;
+  --shadow: 0 24px 70px rgba(135, 107, 116, 0.16);
+  --transition: 0.24s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
