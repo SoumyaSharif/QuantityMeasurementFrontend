@@ -159,6 +159,10 @@ export class AuthPageComponent {
         </svg>`;
   }
 
+  googleLogin(): void {
+    window.location.href = 'http://localhost:8080/oauth2/authorization/google';
+  }
+
   private markInvalid(field: string): void {
     this.invalidFields.add(field);
   }

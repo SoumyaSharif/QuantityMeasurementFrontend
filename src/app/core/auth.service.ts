@@ -62,6 +62,21 @@ export class AuthService {
     void this.router.navigate(['/login']);
   }
 
+  setSessionFromJwt(token: string): void {
+    try {
+      // Simple JWT payload decode (no verify for demo)
+      const payload = JSON.parse(atob(token.split('.')[1]));
+      const session: SessionUser = {
+        name: payload.name || payload.sub || payload.email?.split('@')[0] || 'User',
+        email: payload.email || payload.sub || 'user@example.com',
+        mobile: payload.mobile || null
+      };
+      this.setSession(session);
+    } catch (e) {
+      console.error('Invalid JWT:', e);
+    }
+  }
+
   private setSession(user: SessionUser): void {
     localStorage.setItem(this.sessionKey, JSON.stringify(user));
   }

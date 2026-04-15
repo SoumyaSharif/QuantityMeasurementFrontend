@@ -19,7 +19,12 @@ export const routes: Routes = [
     loadComponent: () => import('./features/dashboard/dashboard-page.component').then((m) => m.DashboardPageComponent)
   },
   {
+    path: 'oauth-success',
+    loadComponent: () => import('./features/auth/oauth-success.component').then((m) => m.OAuthSuccessComponent)
+  },
+  {
     path: '**',
     redirectTo: 'login'
   }
 ];
+
